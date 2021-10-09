@@ -3,9 +3,10 @@
 This document describes the steps for installing the necessary software for the CMPE 150 Introduction to Computing course. You will need to install the following:
 
 - python3
-
 - PyCharm
 - Teaching.Codes plugin
+
+You can find pdf version of this file [here](InstallationGuide.pdf)
 
 #### Problems
 
