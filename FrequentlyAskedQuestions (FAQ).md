@@ -1,65 +1,26 @@
 # Frequently Asked Question (FAQ)
 
 1. How can I install the software required for this course?
-   * Follow the [Installation Guide](InstallationGuide.md).
-
+   
+* Follow the [Installation Guide](InstallationGuide.md).
+   
 2. How can I update Teaching Codes Plugin?
-   * Follow the [Teaching Codes Update Guide](TeachingCodesGuide.md)
-
+   
+* Follow the [Teaching Codes Update Guide](TeachingCodesGuide.md)
+   
 3. How can I open/submit a project?
-   * Follow the [Teaching Codes Guide](TeachingCodesGuide.md)
-
+   
+* Follow the [Teaching Codes Guide](TeachingCodesGuide.md)
+   
 4. I encountered an error during installation/using Teaching Codes, how can I get help?
-   * Check the questions/solutions in this document and then Technical Support Forum on Moodle. If you can't find the solution, send an email to the mail address of your section: cmpe150.mail@gmail.com for CMPE150.01 and cmpe150.mail2@gmail.com for CMPE150.02.
-
-5. I get one of the error listed below while installing Homebrew 
-
-   * curl (6): Could not resolve host: https
-   * curl: (1) Protocol ' https not supported or disabled in libcurl
-
-     Try the commands below. If any of them works, then continue installation. When the installation is completed, check it by typing ```brew help```
-
-   * ```bash
-     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"	
-     ```
-
-   * ```bash 
-     /bin/bash -c "$(curl -fsSL4 https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-     ```
-
-   * ```bash
-     /bin/bash -c "$(usr/bin/curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-     ```
-
-   * ```bash
-     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-     ```
-6. I get 'brew not found' error 
    
-   * If you are using **zsh**, you need to add HomeBrew to your path in zsh profile:
+* Check the questions/solutions in this document and then Technical Support Forum on Moodle. If you can't find the solution, send an email to cmpe150.mail@gmail.com.
    
-     * Copy and the following line on the terminal, replace \<username\> with your username and then press return (enter).
-     
-       ```bash 
-       echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/<username>/.zprofile
-       ```
-     * Then copy and paste the next line on the terminal, press return (enter)
-
-       ```bash 
-       eval $(/opt/homebrew/bin/brew shellenv)
-       ```
-     * Check whether it is succesfully added to the profile, by typing:
-     
-       ```bash
-       brew help
-       ```
 7. Teaching.Codes Plugin displays 'Nothing to show'
    
    * Make sure you do not extract the Teaching.Codes zip file. 
    * Download the Teaching.Codes zip using Chrome instead of Safari.  
-   * If you are using Macbook M1, make sure you install **Intel version of PyCharm.** 
    * Then, reinstall the plugin by following [Teaching.Codes guide](https://github.com/gokceuludogan/CmpE150-Python/blob/main/TeachingCodesGuide.md)  
-   *    
 8. I can't see the button names in the plugin <a name="button"></a>
 
    * Change the theme by following these steps:

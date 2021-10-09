@@ -6,13 +6,13 @@ You can find the PDF version of this file [here](Teaching.CodesProjectGuide.pdf)
 
 <img src="figures/project-guide/1618485979513.png" alt="1618485979513" style="50%" width="50%" />
 
-If you have login issues, send an email to the mail address of your section: cmpe150.mail@gmail.com for CMPE150.01 and cmpe150.mail2@gmail.com for CMPE150.02. Please include the error messages/screenshots. 
+If you have login issues, send an email to the mail address of your section: cmpe150.mail@gmail.com. Please include the error messages/screenshots. 
 
 - If you have logged in successfully, you will see the **Navigator window**:
 
 <img src="figures/project-guide/1618486104949.png" alt="1618486104949" width="50%" />
 
-​		Select the term (2021 Spring) and double click on your section:
+​		Select the term and double click on your section:
 
 <img src="figures/project-guide/1618486398394.png" alt="1618486398394" width="50%"/>
 
