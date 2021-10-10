@@ -24,7 +24,7 @@ Write a program that takes 3 integers from the user and then prints the sum, mea
 | -------- | ------------- |
 | 13 27 14 | 54 18.00 4914 |
 
-## Question 5
+## Question 4
 
 Using the formula below of compound interest, take the **principal amount (A)**, **interest rate (i)** (per month) and **duration (n)** (months) and print the final amount.
 
@@ -36,7 +36,7 @@ Using the formula below of compound interest, take the **principal amount (A)**,
 | 1000 12 5 | 1762.34 |
 | 500 12 5  | 881.17  |
 
-## Question 6
+## Question 5
 
  Guess the outcome of each statement. Then check the results.
 
@@ -66,7 +66,7 @@ Using the formula below of compound interest, take the **principal amount (A)**,
   </em>
   <br>
 
-## Question 7
+## Question 6
 
 Write a program that calculates the amount of seconds in a given period of years, months, days, hours and minutes respectively.
 
@@ -78,7 +78,7 @@ Write a program that calculates the amount of seconds in a given period of years
 | 5 2 4 3 0 | 163220400 |
 | 1 1 1 1 1 | 34218060  |
 
-## Question 8
+## Question 7
 
 There is a cash machine with an infinite supply of 5tl banknotes and 1tl coins inside it.
 
@@ -89,7 +89,7 @@ Write a function that takes an integer  representing the amount of money request
 | 57    | 5tl banknotes: 11 <br />1tl banknotes: 2 |
 | 269   | 5tl banknotes: 53 <br />1tl banknotes: 4 |
 
-## Question 9
+## Question 8
 
 Write a function that takes a radius and returns the volume of the sphere.
 
@@ -98,7 +98,7 @@ Write a function that takes a radius and returns the volume of the sphere.
 | 3     | 113.097335529 |
 | 6     | 904.778684234 |
 
-## Question 10
+## Question 9
 
 Write a function called `power` that takes two integer parameter as **number** and **n**. The function should return the **nth** power of **number**.
 
@@ -108,7 +108,7 @@ Write a function called `power` that takes two integer parameter as **number** a
 | 3 2   | 9      |
 | 4 3   | 64     |
 
-## Question 11
+## Question 10
 
 Write a program that takes 3 integers from the user and then prints the sum of odd numbers.
 
@@ -118,7 +118,7 @@ Write a program that takes 3 integers from the user and then prints the sum of o
 | 2 2 4  | 0      |
 | 1 9 15 | 25     |
 
-## Question 12
+## Question 11
 
 When you multiply an integer by itself, the result is a square number.
 
