@@ -14,7 +14,7 @@ If you encounter a problem during installation, first check **[FAQ](FrequentlyAs
 
 **Operating System:** Specify your operating system: Windows/Linux/MacOS
 
-**Step:** Specify the installation step you got the error: (e.g. Install Python, Step 5)
+**Step:** Specify the installation step you got the error: (e.g. Install Python)
 
 **Error:** Describe the error. Paste the error or upload a screenshot showing the error.
 
