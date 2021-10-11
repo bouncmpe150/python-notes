@@ -22,10 +22,10 @@
       * Make sure that you install PyCharm 2020.3.5 for Intel with Rosetta 2.
       * Then follow the next steps in [Installation Guide](InstallationGuide.md)
       * You may also have to disable SIP following [this link](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
-   
-   * Make sure you do not extract the Teaching.Codes zip file. 
-   * Download the Teaching.Codes zip using Chrome instead of Safari.  
-   * Then, reinstall the plugin by following [Teaching.Codes guide](TeachingCodesGuide.md)  
+   * Otherwise,
+      * Make sure you do not extract the Teaching.Codes zip file. 
+      * Download the Teaching.Codes zip using Chrome instead of Safari.  
+      * Then, reinstall the plugin by following [Teaching.Codes guide](TeachingCodesGuide.md)  
 8. I can't see the button names in the plugin <a name="button"></a>
 
    * Change the theme by following these steps:
