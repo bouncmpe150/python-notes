@@ -108,7 +108,7 @@ Write a function called `power` that takes two integer parameter as **number** a
 | 3 2   | 9      |
 | 4 3   | 64     |
 
-## Question 10 & 11 requires knowledge of Boolean expressions and are for those with Python background. Solve them without using if statements. 
+## Question 10 & 11 requires knowledge of Boolean expressions and they are for those with Python background. Solve them without using if statements. 
 
 ## Question 10
 
