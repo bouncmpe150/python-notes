@@ -104,7 +104,7 @@ Write a function called `power` that takes two integer parameter as **number** a
 
 | Input | Output |
 | ----- | ------ |
-| 5     | 25     |
+| 5 2   | 25     |
 | 3 2   | 9      |
 | 4 3   | 64     |
 
