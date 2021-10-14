@@ -119,7 +119,7 @@ Step by step instructions for installing these software are provided below for t
 ## 2. Install PyCharm <a name="pycharm"></a>
 
 * Go to https://www.jetbrains.com/pycharm/download/other.html 
-* Choose your operating system (Windows, Mac or Linux) and download from the “Community” or “Professional” option. Both work the same for the purposes of this course. **Make sure you download version 2020.3.5** and please upgrade/downgrade or install this version too if you have a different version already installed.
+* Choose your operating system (Windows, MacOS or Linux) and download from the “Community” or “Professional” option. Both work the same for the purposes of this course. **Make sure you download version 2020.3.5** and please upgrade/downgrade or install this version too if you have a different version already installed.
 * After the download finishes, install PyCharm. Your computer may not trust applications downloaded from the web, if so change this from your system preferences or trust this source in the appearing dialog. The installation will begin, accept the license agreement and choose your settings like the dark theme, create a launcher script if you wish (you don’t need to), and
   you will not need any plugins it shows you.
 * After the installation, run **PyCharm**. License Activation window will appear if you chose “*Professional*”. You can get a free student license with your university email (with the boun extension) from JetBrains. Enter your license information and
@@ -132,7 +132,7 @@ Step by step instructions for installing these software are provided below for t
 
 * In the options on the right side, you can write a project name of your choosing at the end of the *Location setting* -the one at the top of the window- by deleting the *pythonProject* and writing something like *myFirstProject* or *hello*.
 
-* Then, under *Python Interpreter*, make sure the *New environment using Virtualenv* is checked, and make sure the *Base interpreter* is pointing to **the location of the python you just downloaded**. Windows will usually find this by itself. **In Linux and Mac**, this may point to the default python which comes pre-installed in your computer; so click the three dots and navigate to the location you noted earlier belonging to python3.8.
+* Then, under *Python Interpreter*, make sure the *New environment using Virtualenv* is checked, and make sure the *Base interpreter* is pointing to **the location of the python you just downloaded**. Windows will usually find this by itself. **In Linux and MacOS**, this may point to the default python which comes pre-installed in your computer; so click the three dots and navigate to the location you noted earlier belonging to python3.8.
 
   The location should be something similar to what is below:
 
@@ -164,7 +164,7 @@ Step by step instructions for installing these software are provided below for t
 
   For a successful installation, if you are using Safari browser, you need to go to *Preferences* and under the *General* tab, uncheck the option open “safe” files after downloading. Otherwise the downloaded .zip file is automatically extracted and won’t work.
 
-   https://programming.cmpe.boun.edu.tr/downloads/StudentPlugin/TCPluginJetBrains_MacOs.zip
+   https://programming.cmpe.boun.edu.tr/downloads/StudentPlugin/TCPluginJetBrains_MacOS.zip
 
 * While PyCharm is open, go to *File>Settings* (just *Preferences* in Mac) and find *Plugin*s on the left.
 
