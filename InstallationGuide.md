@@ -119,7 +119,7 @@ Step by step instructions for installing these software are provided below for t
 ## 2. Install PyCharm <a name="pycharm"></a>
 
 * Go to https://www.jetbrains.com/pycharm/download/other.html 
-* Choose your operating system (Windows, MacOS or Linux) and download from the “Community” or “Professional” option. Both work the same for the purposes of this course. **Make sure you download version 2020.3.5** and please upgrade/downgrade or install this version too if you have a different version already installed.
+* Choose your operating system (Windows, MacOS or Linux) and download from the “Community” or “Professional” option. Both work the same for the purposes of this course. **Make sure you download version 2021.2.2** and please upgrade/downgrade or install this version too if you have a different version already installed.
 * After the download finishes, install PyCharm. Your computer may not trust applications downloaded from the web, if so change this from your system preferences or trust this source in the appearing dialog. The installation will begin, accept the license agreement and choose your settings like the dark theme, create a launcher script if you wish (you don’t need to), and
   you will not need any plugins it shows you.
 * After the installation, run **PyCharm**. License Activation window will appear if you chose “*Professional*”. You can get a free student license with your university email (with the boun extension) from JetBrains. Enter your license information and
