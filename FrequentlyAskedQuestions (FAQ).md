@@ -19,7 +19,7 @@
 7. Teaching.Codes Plugin displays 'Nothing to show'
    * If you have a Macbook with M1 chip
       
-      * Make sure that you install PyCharm 2020.3.5 for Intel with Rosetta 2.
+      * Make sure that you install PyCharm 2021.2.2 for Intel with Rosetta 2.
       * Then follow the next steps in [Installation Guide](InstallationGuide.md)
       * You may also have to disable SIP following [this link](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
    * Otherwise,
