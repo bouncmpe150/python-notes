@@ -44,7 +44,7 @@ To update Teaching.Codes, **you need to uninstall and reinstall the Teaching.Cod
 
    Linux: https://programming.cmpe.boun.edu.tr/downloads/StudentPlugin/TCPluginJetBrains_Linux.zip
 
-   MacOS: https://programming.cmpe.boun.edu.tr/downloads/StudentPlugin/TCPluginJetBrains_MacOs.zip
+   MacOS: https://programming.cmpe.boun.edu.tr/downloads/StudentPlugin/TCPluginJetBrains_MacOS.zip
 
    If you're using MacOS, please download the .zip file using **Chrome instead of Safari** to avoid any issues.
 
