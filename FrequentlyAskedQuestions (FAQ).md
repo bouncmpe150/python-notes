@@ -36,29 +36,33 @@
      * Click **OK**
 
      ![](figures/ChangeTheme.png)
+9. Teaching.Codes plugin disappeared <a name="plugin"></a>
+   * To open the plugin, click *View > Tool Windows > Teaching.Codes*
+   
+      ![](figures/TC.png)
 
-9. I have deleted the contents of **Main.py** <a name="mainpy"></a>
+10. I have deleted the contents of **Main.py** <a name="mainpy"></a>
    * Restore it from **Main.py.txt** under corresponding question's **src** folder
 
      ![](figures/Maintxt.png)
 
-10. I can't see the Question description <a name="description"></a>
+11. I can't see the Question description <a name="description"></a>
    * Open the **Question.html** under **WebContent** in a browser
    * Right click on **Question.html** file
    * Click **Open in Browser.** 
 
     <img src="figures/HTML_Browser.png"  style="zoom:50%;" />
 
-11. If there are multiple questions and you see the same description for both questions or still blank page. 
+12. If there are multiple questions and you see the same description for both questions or still blank page. 
 
    * Right click on **Question.html** file
    * Choose "**Show in Explorer/Finder**". This step open the folder that contains the html file.
 
-   <img src="figures/HTML_Explorer.png" style="zoom: 50%;" />
+      <img src="figures/HTML_Explorer.png" style="zoom: 50%;" />
 
    * From the folder, open the html file.
 
-12. I can't see the Exam Results <a name="examresults"></a>
+13. I can't see the Exam Results <a name="examresults"></a>
 
     * Log out, and log in to the Teaching.Codes plugin.	
     * Select the class from the Navigator. Wait a while for the class to load. 
@@ -66,6 +70,6 @@
       * Click the Projects tab on the left of ExamResults
       * Then, go into ExamResults once again. Now, when you click Open, you should be able to see your results. 
 
-13. What counts as **cheating**:
+14. What counts as **cheating**:
     * **Information exchange between students:** Giving and Receiving information to/from your colleagues both count as cheating.
     * **Using codes from any source other than the materials of our course:** You can consult internet or books to learn and improve your programming skills. But you shouldn't use any material that is not your own work in the projects and exams.
