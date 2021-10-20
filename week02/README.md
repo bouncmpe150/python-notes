@@ -109,11 +109,14 @@ Assume there is an entry in each column. Write a function that determines/return
 In football, there is a statistic for quarterbacks called the passer rating. It is calculated as follows:
 
 (a) C is the “completions per attempt” times 100 − 30 all divided by 20.
+
 (b) Y is the “yards per attempt” − 3 all divided by 4.
+
 (c) T is the “touchdowns per attempt” times 20.
+
 (d) I is 2.375 minus (“interceptions per attempts” times 35).
-(e) The passer rating is the sum of C, Y, T, and I all divided by 6 and then multiplied
-by 100.
+
+(e) The passer rating is the sum of C, Y, T, and I all divided by 6 and then multiplied by 100.
 
 Write a function that takes five parameters: pass completions, pass attempts, total passing yards, touchdowns  and interceptions and returns the passer rating.
 
