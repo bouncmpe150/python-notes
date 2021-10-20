@@ -68,6 +68,10 @@ Given three integers, one representing **the initial number of bacteria**, one r
 | 1 1 2 | 4      |
 | 5 3 8 | 20     |
 
+<details><summary>Example</summary>
+<img src="https://cronodon.com/sitebuilder/images/Exponential_growth-600x471.jpg">
+</details>
+
 ## Question 7
 
 Write a function that takes four integers representing (x, y) coordinates of two points and calculates the distance between these two points. First two integers are x and y coordinates of a point on a 2D plane. Next 2 integers are coordinates of another point on the same plane.
@@ -103,6 +107,10 @@ Assume there is an entry in each column. Write a function that determines/return
 | ----- | ------- |
 | 156   | 2 12 1  |
 | 2348  | 24 10 3 |
+
+<details><summary>Example</summary>
+<img src="q9.png">
+</details>
 
 ## Question 10
 
