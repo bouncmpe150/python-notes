@@ -17,3 +17,11 @@ Bogazici University CmpE 150 Introduction to Computing (Python programming langu
 * Expressions
 * Functions
 
+### [Week2](week02/)
+
+* Functions
+
+
+### [Week3](week03/)
+
+* For Loops
