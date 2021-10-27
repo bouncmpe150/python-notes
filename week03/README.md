@@ -92,6 +92,17 @@ Write a program that takes an integer n and then prints n!.
 |   5   |   120   |
 |  10   | 3628800 |
 
+## Question 8 - Sum of Products 
+
+Write a program that takes an integer and then reads n lines containing two integers. The program then multiplies the integers in the same line and sums all the products. 
+
+
+| INPUT | OUTPUT  |
+| :---: | :-----: |
+|   3<br /> 1 2 <br/> 2 3 <br/> 3 4 <br/>    |   20   |
+|  2 <br/> 3 4 <br/> 5 10  | 62 |
+
+
 # Nested Loops
 
 ## Question 1 - R\*\*\*tangle
