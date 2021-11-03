@@ -39,7 +39,7 @@ These extra days occur in each year which is an integer multiple of 4, except fo
 | 1005 | not a leap year |
 | 4 | leap year |
 | 1000 | not a leap year |
-| 4000 | not a leap year |
+| 4000 | leap year |
 
 ## Question 4 - Parking Fee
 A parking lot "Park150" is charging its users as follows:  
