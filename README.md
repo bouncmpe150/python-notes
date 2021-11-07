@@ -25,3 +25,12 @@ Bogazici University CmpE 150 Introduction to Computing (Python programming langu
 ### [Week3](week03/)
 
 * For Loops
+
+
+### [Week4](week04/)
+
+* Conditional Statements
+
+### [Week5](week05/)
+
+* While Loops
