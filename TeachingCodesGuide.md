@@ -10,7 +10,7 @@
 
    This video shows you how a Quiz looks like, and how you submit your solutions. 
    
-   Note that the quiz in the video contains only one question; however, there might be multiple questions in an exam or a quiz. If that's the case, then you are supposed to write your solution to corresponding questionXXX/src/Main.py. Please see the example below that shows the correspondence between the questions displayed on the Teaching.Codes plugin and the project folders under Project window. 
+   Note that the quiz in the video contains only one question; however, there might be multiple questions in an exam or a quiz. If that's the case, then you are supposed to write your solution to corresponding questionXXX/src/Main.py. Please see the example below that shows the correspondence between the questions displayed on the Teaching.Codes plugin and the project folders under Project window. **Make sure you write your code to the correct file.**
    
    ![](figures/correspondence.png)
    
