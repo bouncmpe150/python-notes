@@ -2,19 +2,15 @@
 
 **Quiz Guide Playlist: https://www.youtube.com/playlist?list=PLgnOcaYXEY3lEkkwZPPFV0FcXtVLhnKdB**
 
-1. Configuring the default Python Interpreter (https://youtu.be/9Ou3WvXMQQU)
-
-   This video explains how to **configure your default Python Interpreter**. You must only do this once, and the default interpreter will be determined for all projects you create, and all Quizzes you take. **If you don't perform this before your Quiz**, your code may be interpreted by a different version of Python in your computer, and **you may not get a full grade**. Please make sure that you set your default Python interpreter as Python 3.8.6 (location may differ in different systems, refer to the *Create a new project* section in the [Installation Guide](Installation%20Guide.pdf). 
-
-2. Teaching.Codes Login (https://youtu.be/AQX5aZXDSz8)
+1. Teaching.Codes Login (https://youtu.be/AQX5aZXDSz8)
 
    You must **make sure that you can login** to your Teaching.Codes accounts before the Quiz.
 
-3. Taking the Quiz (https://youtu.be/T1kNINEEPmI)
+2. Taking the Quiz (https://youtu.be/T1kNINEEPmI)
 
    This video shows you how a Quiz looks like, and how you submit your solutions. 
 
-4. Problems Encountered during the Quiz (https://youtu.be/1X0weYP8dyQ)
+3. Problems Encountered during the Quiz (https://youtu.be/1X0weYP8dyQ)
 
    Please watch the solutions to the **problems encountered during the Quiz**, so that you may take some precautions beforehand. 
 
@@ -26,13 +22,14 @@
 
 You can find all videos inside this playlist (https://www.youtube.com/playlist?list=PLgnOcaYXEY3lEkkwZPPFV0FcXtVLhnKdB). 
 
-5. Open Grades
+4. Open Grades
 
    In order to reach your grades, 
 
    1. Login to your Teaching.Codes account in PyCharm. 
    2. Select your class (double-click your class under ***Navigator***). 
    3. Check out your grade under ***ExamResults***. 
+ 
 
 ## Teaching.Codes Plugin Update 
 
