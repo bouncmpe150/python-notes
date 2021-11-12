@@ -1,6 +1,6 @@
 ## Teaching.Codes Quiz/Project Guide <a name="tc-quiz"></a>
 
-**Quiz Guide Playlist: https://www.youtube.com/playlist?list=PLgnOcaYXEY3lEkkwZPPFV0FcXtVLhnKdB**
+**Quiz/Exam Guide Playlist: https://www.youtube.com/playlist?list=PLgnOcaYXEY3lEkkwZPPFV0FcXtVLhnKdB**
 
 1. Teaching.Codes Login (https://youtu.be/AQX5aZXDSz8)
 
@@ -9,6 +9,12 @@
 2. Taking the Quiz (https://youtu.be/T1kNINEEPmI)
 
    This video shows you how a Quiz looks like, and how you submit your solutions. 
+   
+   Note that the quiz in the video contains only one question; however, there might be multiple questions in an exam or a quiz. If that's the case, then you are supposed to write your solution to corresponding questionXXX/src/Main.py. Please see the example below that shows the correspondence between the questions displayed on the Teaching.Codes plugin and the project folders under Project window. 
+   
+   ![](figures/correspondence.png)
+   
+   If there are multiple questions in an exam, please 
 
 3. Problems Encountered during the Quiz (https://youtu.be/1X0weYP8dyQ)
 
