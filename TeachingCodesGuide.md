@@ -1,4 +1,4 @@
-## Teaching.Codes Quiz/Project Guide <a name="tc-quiz"></a>
+## Teaching.Codes Exam/Quiz/Project Guide <a name="tc-quiz"></a>
 
 **Quiz/Exam Guide Playlist: https://www.youtube.com/playlist?list=PLgnOcaYXEY3lEkkwZPPFV0FcXtVLhnKdB**
 
