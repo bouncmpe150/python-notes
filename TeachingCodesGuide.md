@@ -28,7 +28,11 @@
 
 You can find all videos inside this playlist (https://www.youtube.com/playlist?list=PLgnOcaYXEY3lEkkwZPPFV0FcXtVLhnKdB). 
 
-4. Open Grades
+4. Teaching.Codes Window disappeared
+   
+   You can open it by clicking View>Tool Windows>Teaching.Codes
+   
+5. Open Grades
 
    In order to reach your grades, 
 
