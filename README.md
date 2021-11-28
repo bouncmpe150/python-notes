@@ -34,3 +34,11 @@ Bogazici University CmpE 150 Introduction to Computing (Python programming langu
 ### [Week5](week05/)
 
 * While Loops
+
+### [Week6](week06/)
+
+* Loops
+
+### [Week7](week07/)
+
+* String
