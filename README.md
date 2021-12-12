@@ -47,3 +47,7 @@ Bogazici University CmpE 150 Introduction to Computing (Python programming langu
 
 * Lists
 * Tuples
+
+### [Week9](week09/)
+
+* Dictionary
