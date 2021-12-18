@@ -289,41 +289,6 @@ for row in matrix:
 
 ### Problem 8:
 
-Today is the big day for the residents of [Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch](https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll). Since no one is able to pronounce the name of this lovely town, except [Liam Dutton](https://www.youtube.com/watch?v=fHxO0UdpoxM) the weatherman, people of the town decided to change its name to a simple number from 1 to 100 so that everyone can pronounce its name easily. The number (name) with the most votes wins the election. In case of a tie, the smallest number (name) wins. Your task is to announce the winner of the election and the number of vote the winner got, to the people of Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.
-
-| INPUT  | OUTPUT |
-| ------ | ------ |
-| 5 <br> 12 8 4 59 8 | 8 2|
-|6 <br> 5 46 100 46 5|5 2|
-| 10 <br> 1 2 1 3 1 4 1 5 1 6|   1 5|
-| 8 <br> 15 78 100 65 100 48 99 100| 100 3 |
-
-```python
-n = int(input())
-votes = [int(x) for x in input().split()]
-
-dict_votes = {}
-for vote in votes:
-    if vote in dict_votes:
-        dict_votes[vote] += 1
-    else:
-        dict_votes[vote] = 1
-
-max_votes = 0
-color = 0
-for key, value in dict_votes.items():
-    if(value > max_votes):
-        color = key
-        max_votes = value
-    elif(value == max_votes and color > key):
-        color = key
-
-print(color, max_votes)
-
-```
-
-### Problem 9:
-
 Max wants to make huge profits in the stock market, so he needs to keep track of the stock prices everyday. The stock prices are given in a list as input. Prices[i] indicates the stock price on the ith day. Max wants to make the maximum profit he can by buying the stock on a day and then selling it on another day. You need to help him choose the days he should buy and sell the stock. 
 Write a function that takes the list of prices and returns the maximum profit.
 
