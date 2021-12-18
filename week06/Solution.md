@@ -27,14 +27,16 @@ print(my_sum)
 
 ```python
 def binary_find(num, L):
- 	while len(L) != 0:
-    	if num == L[len(L)//2]:
-     		return True
-   		elif num > L[len(L)//2]:
-     		L = L[len(L)//2+1:]
-   		else:
-     		L = L[:len(L)//2]
- 	return False
+    while len(L) != 0:
+        if num == L[len(L)//2]:
+            return True
+        elif num > L[len(L)//2]:
+            L = L[len(L)//2+1:]
+        else:
+            L = L[:len(L)//2]
+    return False
+
+
 ```
 
 ## Question 4
@@ -51,11 +53,12 @@ n = int(input())
 reversed = reverse(n)
 digit = 1
 total = 0
-while n > 0:
-    total += (n % 10) ^ digit
+while reversed > 0:
+    total += (reversed % 10) ** digit
     digit += 1
-    n = n // 2
+    reversed = reversed // 10
 print(n == total)
+
 ```
 
 ## Question 5
@@ -88,24 +91,30 @@ print(euler_totient(a))
 
 ```python
 def max(limit, weight, profit):
-    total_profit = 0
-    sum = 0
-    max_profit = -1
-    max_index = -1
- 	while sum < limit:
-        for i in range(len(weight)):
-            profit_per_mass = profit[i]/weight[i]
-            if profit_per_mass > max_profit:
-                max_index = i
-                max_profit = profit_per_mass
-        if max_index == -1:
-            break
-        if sum + weight[max_index] <= weight[max_index]:
-            total_profit += profit[max_index]
-            sum += weight[max_index]
-        profit[max_index] = 0
-        max_index = -1
-        max_profit = -1
- 	return total_profit
+	total_profit = 0
+	sum = 0
+	max_profit = -1
+	max_index = -1
+	while sum < limit:
+		for i in range(len(weight)):
+			profit_per_mass = profit[i]/weight[i]
+			if profit_per_mass > max_profit:
+				max_index = i
+				max_profit = profit_per_mass
+		if max_index == -1:
+			break
+		if sum + weight[max_index] <= weight[max_index]:
+			total_profit += profit[max_index]
+			sum += weight[max_index]
+		profit[max_index] = 0
+		max_index = -1
+		max_profit = -1
+	return total_profit
+
+weight = [10, 20, 30]
+profit = [4 , 5 , 60]
+limit = 30
+
+print(max(limit, weight, profit))
 ```
 
