@@ -51,3 +51,8 @@ Bogazici University CmpE 150 Introduction to Computing (Python programming langu
 ### [Week9](week09/)
 
 * Dictionary
+
+### [Week10](week10/)
+
+* Sets
+* Files
