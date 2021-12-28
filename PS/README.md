@@ -318,3 +318,362 @@ prices = list(map(int, input().split()))
 print(max_profit(prices))
    
 ```
+
+### Problem 9:
+
+Today is the big day for the residents of [Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch](https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll). Since no one is able to pronounce the name of this lovely town, except [Liam Dutton](https://www.youtube.com/watch?v=fHxO0UdpoxM) the weatherman, people of the town decided to change its name to a simple number from 1 to 100 so that everyone can pronounce its name easily. The number (name) with the most votes wins the election. In case of a tie, the smallest number (name) wins. Your task is to announce the winner of the election and the number of vote the winner got, to the people of Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.
+
+| INPUT  | OUTPUT |
+| ------ | ------ |
+| 5 <br> 12 8 4 59 8 | 8 2|
+|6 <br> 5 46 100 46 5|5 2|
+| 10 <br> 1 2 1 3 1 4 1 5 1 6|   1 5|
+| 8 <br> 15 78 100 65 100 48 99 100| 100 3 |
+
+```python
+n = int(input())
+votes = [int(x) for x in input().split()]
+
+dict_votes = {}
+for vote in votes:
+    if vote in dict_votes:
+        dict_votes[vote] += 1
+    else:
+        dict_votes[vote] = 1
+
+max_votes = 0
+color = 0
+for key, value in dict_votes.items():
+    if(value > max_votes):
+        color = key
+        max_votes = value
+    elif(value == max_votes and color > key):
+        color = key
+
+print(color, max_votes)
+
+```
+
+
+### Problem 10:
+
+The minions Kevin and Stuart are playing a game called "Minion Game". They are given a string S and they have to make substrings using the letters of the string. Stuart has to make words starting with consonants while Kevin has to make words starting with vowels.
+The game ends when both players have made all possible substrings.
+You have to print the name of the winner with its score, if no winners print "Draw".
+
+Scoring
+A player gets +1 point for each occurrence of the substring in the string .
+
+For Example:
+String  = BANANA
+Kevin's vowel beginning word = ANA
+Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
+
+![banana](https://user-images.githubusercontent.com/88784379/145871831-b644b71d-fb85-4832-9a86-7bca360dfe45.png)
+
+```python
+
+string = input()
+
+stuart = 0
+kevin = 0
+vowels = ["A", "E", "O", "I", "U"]
+for i in range(len(string)):
+    if string[i] in vowels:
+        kevin += len(string) - i
+    else:
+        stuart += len(string) - i
+
+if kevin > stuart:
+    print("Kevin", kevin)
+elif stuart > kevin:
+    print("Stuart", stuart)
+else:
+    print("Draw")
+```
+
+### Problem 11:
+
+In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different "order". The "order" of the alphabet is some permutation of lowercase letters.
+
+Given a sequence of "words" written in the alien language, and the "order" of the alphabet, return true if and only if the given words are sorted lexicographically in this alien language.
+ 
+
+##### Example 1:
+
+Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
+
+Output: true
+
+Explanation: As 'h' comes before 'l' in this language, then the sequence is sorted.
+
+
+##### Example 2:
+
+Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz"
+
+Output: false
+
+Explanation: As 'd' comes after 'l' in this language, then words[0] > words[1], hence the sequence is unsorted.
+
+
+##### Example 3:
+
+Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz"
+
+Output: false
+
+Explanation: The first three characters "app" match, and the second string is shorter (in size.) According to lexicographical rules "apple" > "app", because 'l' > 
+'∅', where '∅' is defined as the blank character which is less than any other character (More info).
+ 
+
+
+Constraints:
+
+1 <= words.length <= 100
+
+1 <= words[i].length <= 20
+
+order.length == 26
+
+
+All characters in words[i] and order are English lowercase letters.
+
+```python
+ def isAlienSorted(W, O):
+        alpha = {O[i]: i for i in range(len(O))}
+        for i in range(1,len(W)):
+            a, b = W[i-1], W[i]
+            for j in range(len(a)):
+                if j == len(b): return False
+                achar, bchar = a[j], b[j]
+                aix, bix = alpha[achar], alpha[bchar]
+                if aix < bix: 
+                    break
+                if aix > bix: 
+                    return False
+        return True
+```
+
+### Problem 12:
+
+A gene is represented as a string of length n (where n is divisible by 4), composed of the letters A, C, T, and G. It is considered to be steady if each of the four letters occurs exactly n/4 times. For example, GACT and AAGTGCCT are both steady genes.
+
+Bear Limak is a famous biotechnology scientist who specializes in modifying bear DNA to make it steady. Right now, he is examining a gene represented as a string `gene`. It is not necessarily steady. Fortunately, Limak can choose one (maybe empty) substring of `gene`  and replace it with any string of the same length.
+
+Modifying a large substring of bear genes can be dangerous. Given a string `gene`, can you help Limak find the length of the smallest possible substring that he can replace to make  a steady gene?
+
+Note: A substring of a string `s` is a subsequence made up of zero or more contiguous characters of `s`.
+
+As an example, consider `gene= ACTGAAAG` . The substring `AA` just before or after `G` can be replaced with `CT` or `TC`. One selection would create `ACTGACTG`.
+
+Write a function named steady_gene that takes a string representing a gene and returns an integer that represents the length of the smallest substring to replace.
+
+Sample Input
+
+```
+8  
+GAAATAAA
+```
+Sample Output
+
+```
+5
+```
+Explanation
+
+One optimal solution is to replace `AAATA` with  `TTCCG` resulting in `GTTCCGAA`.
+The replaced substring has length 5.
+
+
+```python
+def steady_gene(gene):
+    n = len(gene) / 4
+    gene_l = ['A', 'C', 'T', 'G']
+    count_l = [gene.count(letter) for letter in gene_l]
+    minlen = int(sum([n - count for count in count_l if count < n]))
+    valid = False
+    while valid == False:
+        for i in range(len(gene) - minlen):
+            selection = gene[i:i + minlen]
+            count_select = [selection.count(letter) for letter in gene_l]
+            subtract = [count_l[i] - count_select[i] for i in range(len(count_l))]
+            valid = all(x <= n for x in subtract)
+            if valid == True:
+                break
+        if valid == False:
+            minlen += 1
+    return minlen
+
+````
+
+### Problem 13:
+
+A team of researchers working in Antartica has settled in various camps around the continent to observe penguins. Sadly, due to the climate change, the ice is melting, thus camps lose means of transportation to each other.
+
+Currently available ways are provided by sattelites in a dictionary, for example: 
+
+```
+ways = { 5: {3, 7, 0, 9}}
+```
+
+Means that there is a road from camp 5 to camp 3, 7, 0, and 9.
+
+Alice, a member of this team, loves penguins and wants to see one whenever she desires. She is willing to travel on 2 roads between camps to see penguins in a day. 
+
+Given a map and Alice's location, print the camps where she can go to see the penguins. 
+
+```
+map = {
+ 0: {3},
+ 1: {9},
+ 2: {3, 10},
+ 3: {0, 2, 8, 10},
+ 4: {6, 10},
+ 5: {6},
+ 6: {4, 5, 7, 10},
+ 7: {6, 9},
+ 8: {3, 9},
+ 9: {1, 7, 8},
+ 10: {2, 3, 4, 6}}
+```
+
+For example:
+
+When Alice is at 0, she can go to 3 using a road. 
+
+Then from 3, she can go to 0, 2, 8, 10 using the second road.
+
+Thus {0, 2, 3, 8, 10} is the result.
+
+
+### Problem 14:
+
+Its a dire security problem to use the same password to every website that one logs into. However, remembering a different password for each website is not convenient. You can try to note them down somewhere but someone can get this notes and mess with your accounts.
+
+After thinking about this problem, your best friend comes with the idea secret algorithm and wants you to implement it since she/he can trust only you.
+
+The idea is that you create your secret algorithm which inputs the name of the website and performs some operations to generate a password.
+
+To do so, you generate a palindrome using the website's name via increasing values of letters one by one. For example you can change d to an e. Note that z cannot be increased.
+
+For illustration:
+
+asd → bsd → csd → dsd, thus asd can get to a palindrome in 4 steps.
+
+After palindromizing the website's name, 'palindrom' + number of steps * 141 can be used as a password.
+
+Google account example:
+
+google → googlg in 2 steps
+
+googlg → googog in 3 steps
+
+googog → goooog in 8 steps
+
+Palindrome is created in 14 steps, 14 * 141 = 1974
+
+Thus, goooog1974 is the password.
+
+Note: you can get number of steps between 2 chars using given function:
+
+```python
+def steps(a, b):
+  return ord(a) - ord(b)
+```
+
+### Problem 15:
+
+Sherlock considers a string to be valid if all characters of the string appear the same number of times. It is also valid if he can remove just 1 character at 1 index in the string, and the remaining characters will occur the same number of times. Given a string txt, determine if it is valid. If so, return "YES", otherwise return "NO".
+
+For example, If txt = "abc", the string is valid because the frequencies of characters are all the same. If txt = "abcc", the string is also valid, because we can remove 1 "c" and have one of each character remaining in the string. However, if txt = "abccc", the string is not valid, because removing one character does not result in the same frequency of characters.
+
+Examples:<br>
+<br>
+is_valid("aabbcd") ➞ "NO"<br>
+<br>
+// We would need to remove two characters, both c and d  -> aabb or a and b -> abcd, to make it valid.<br>
+// We are limited to removing only one character, so it is invalid.<br>
+<br>
+is_valid("aabbccddeefghi") ➞ "NO"<br>
+<br>
+// Frequency counts for the letters are as follows:<br>
+// {"a": 2, "b": 2, "c": 2, "d": 2, "e": 2, "f": 1, "g": 1, "h": 1, "i": 1}<br>
+// There are two ways to make the valid string:<br>
+// Remove 4 characters with a frequency of 1: {f, g, h, i}.<br>
+// Remove 5 characters of frequency 2: {a, b, c, d, e}.<br>
+// Neither of these is an option.<br>
+<br>
+is_valid("abcdefghhgfedecba") ➞ "YES"<br>
+<br>
+// All characters occur twice except for e which occurs 3 times.<br>
+// We can delete one instance of e to have a valid string.<br>
+
+
+### Problem 16:
+
+https://www.codewars.com/kata/5f709c8fb0d88300292a7a9d
+
+#### Some people have been killed!
+
+You have managed to narrow the suspects down to just a few. Luckily, you know every person who those suspects have seen on the day of the murders.
+
+#### Task
+
+Given a dictionary with all the names of the suspects and everyone that they have seen on that day which may look like this:
+
+```python
+{'James': ['Jacob', 'Bill', 'Lucas'],
+ 'Johnny': ['David', 'Kyle', 'Lucas'],
+ 'Peter': ['Lucy', 'Kyle']}
+```
+
+and also a list of the names of the dead people:
+
+```python
+['Lucas', 'Bill']
+```
+
+return the name of the one killer, in our case `'James'` because he is the only person that saw both `'Lucas'` and `'Bill'`
+
+### Problem 17:
+
+https://www.codewars.com/kata/52ae6b6623b443d9090002c8
+
+It's Christmas! You had to wait the whole year for this moment. You can already see all the presents under the Christmas tree. But you have to wait for the next morning in order to unwrap them. You really want to know, what's inside those boxes. But as a clever child, you can do your assumptions already.
+
+You know, you were a good child this year. So you may assume, that you'll only get things from your wishlist. You see those presents, you can lift them and you can shake them a bit. Now you can make you assumptions about what you'll get.
+
+  #### Your Task
+
+  You will be given a wishlist, containing all possible items. Each item is in the format: `{name: "toy car", size: "medium", clatters: "a bit", weight: "medium"}`
+
+  You also get a list of presents, you see under the christmas tree, which have the following format each: `{size: "small", clatters: "no", weight: "light"}`
+
+  Your task is to return the names of all wishlisted presents that you might have gotten.
+
+  #### Rules
+
+  - Possible values for `size`: "small", "medium", "large"
+  - Possible values for `clatters`: "no", "a bit", "yes"
+  - Possible values for `weight`: "light", "medium", "heavy"
+  - Don't add any item more than once to the result
+  - The order of names in the output doesn't matter
+  - It's possible, that multiple items from your wish list have the same attribute values. If they match the attributes of one of the presents, add all of them.
+
+  #### Example
+
+  ```python
+  wishlist = [
+      {name: "Mini Puzzle", size: "small", clatters: "yes", weight: "light"},
+      {name: "Toy Car", size: "medium", clatters: "a bit", weight: "medium"},
+      {name: "Card Game", size: "small", clatters: "no", weight: "light"}
+  ]
+  presents = [
+      {size: "medium", clatters: "a bit", weight: "medium"},
+      {size: "small", clatters: "yes", weight: "light"}
+  ]
+  
+  guessGifts(wishlist, presents) // must return ["Toy Car", "Mini Puzzle"]
+  ```
+
